@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Hamburgueria</h1>
+        </header>
+
+        <form id="hamburguer-form">
+            <h2>Crie seu Hamburguer</h2>
+
+            <label class="item-label" for="bread">Escolha o seu Pão</label>
+            <select name="" id="bread">
+                <option value="bread-1">Pão francês - R$ 3,00</option>
+                <option value="bread-2">Pão australiano - R$ 8,00</option>
+                <option value="bread-3">Pão de brioche - R$ 6,00</option>
+            </select>
+            <label class="item-label" for="hamburguer">Escolha o seu Hamburguer</label>
+            <select name="" id="hamburguer">
+                <option value="hamburguer-1">Hambúrguer de picanha - R$13,00</option>
+                <option value="hamburguer-2">Hamburguer de costela - R$10,00</option>
+                <option value="hamburguer-3">Hamburguer Vegano - R$12,00</option>
+            </select>
+            <label class="item-label" for="salad">Escolha sua Salada</label>
+            <label for="salad-1">
+                <input type="checkbox" name="" id="salad-1">
+                <span>Alface - R$1,50</span>
+            </label>
+            <label for="salad-2">
+                <input type="checkbox" name="" id="salad-2">
+                <span>Tomate - R$1,50</span>
+            </label>
+            <label for="salad-none">
+                <input type="checkbox" name="" id="salad-none" checked>
+                <span>Sem salada - R$0,00</span>
+            </label>
+            <label class="item-label" for="cheese">Escolha o seu queijo</label>
+            <select name="" id="cheese">
+                <option value="cheese-1">Mussarela - R$3,00</option>
+                <option value="cheese-2">Prato - R$3,00</option>
+                <option value="cheese-3">Cheddar - R$5,00</option>
+            </select>
+
+            <button>Finalizar pedido</button>
+        </form>
+
+        <article class="sheet">
+            <h2>Ficha do pedido</h2>
+
+            <label class="item-label" for="">Pão</label>
+            <span class="item-chosen" id="bread-chosen"></span>
+            <span class="item-price" id="bread-price"></span>
+
+            <label class="item-label" for="">Hamburguer</label>
+            <span class="item-chosen" id="hamburguer-chosen"></span>
+            <span class="item-price" id="hamburguer-price"></span>
+
+            <label class="item-label" for="">Salada</label>
+            <span class="item-chosen" id="salad-chosen"></span>
+            <span class="item-value" id="salad-price"></span>
+
+            <label class="item-label" for="">Queijo</label>
+            <span class="item-chosen" id="cheese-chosen"></span>
+            <span class="item-value" id="cheese-price"></span>
+
+            <span class="total" id="total"></span>
+        </article>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
